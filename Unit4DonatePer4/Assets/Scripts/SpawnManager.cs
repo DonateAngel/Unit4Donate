@@ -10,7 +10,7 @@ public class SpawnManager : MonoBehaviour
     public int enemyCount;
     public int waveNumber = 1;
     public GameObject[] powerupPrefabs;
-   
+    public GameObject[] powerupPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,12 +40,14 @@ public class SpawnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+      
         enemyCount = FindObjectsOfType<Enemy>().Length;
         if (enemyCount == 0)
         {
             waveNumber++; SpawnEnemyWave(waveNumber);
-         //   Instantiate(powerupPrefabs, GenerateSpawnPosition(), powerupPrefabs.transform.rotation);
-          //  Instantiate(powerupPrefabs, GenerateSpawnPosition(), powerupPrefabs.transform.rotation);
+         Instantiate(powerupPrefabs, GenerateSpawnPosition(), powerupPrefab.transform.rotation);
+         Instantiate(powerupPrefabs, GenerateSpawnPosition(), powerupPrefab.transform.rotation);
         }
     }
 }
