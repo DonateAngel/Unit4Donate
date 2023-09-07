@@ -3,7 +3,9 @@ guid: 5a804c2fa1b670042ac0bc39307298b6
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - powerupIndicator: {fileID: 1742899641471652, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
+  - rocketPrefabs: {fileID: 3474481136719123781, guid: 3f0093aa5e97d9e48af257a8e3c6d1c0, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
