@@ -10,10 +10,13 @@ public class RocketBehavior : MonoBehaviour
    
     private float rocketStrength = 15.0f;
     private float aliveTimer = 5.0f;
-    private Transform homingTarget;
 
-    public void Fire(Transform newTarget)
+    
+
+    public void Fire(Transform homingTarget)
     {
+
+       
         target = homingTarget;
         homing = true;
         Destroy(gameObject, aliveTimer);
@@ -28,7 +31,7 @@ public class RocketBehavior : MonoBehaviour
             transform.LookAt(target);
         }
     }
-    private void OnCollisionEnter(Collision col)
+     void OnCollisionEnter(Collision col)
     {
         if (target !=null)
         {

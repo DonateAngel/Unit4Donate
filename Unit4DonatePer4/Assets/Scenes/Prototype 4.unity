@@ -218,7 +218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262991284284274143, guid: ca6a0c840a802924ea73588de509a27b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.4902313
+      value: 0.57
       objectReference: {fileID: 0}
     - target: {fileID: 6262991284284274143, guid: ca6a0c840a802924ea73588de509a27b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -226,7 +226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262991284284274143, guid: ca6a0c840a802924ea73588de509a27b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.3673573
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6262991284284274143, guid: ca6a0c840a802924ea73588de509a27b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -823,8 +823,12 @@ MonoBehaviour:
   speed: 1
   hasPowerUp: 0
   powerupIndicator: {fileID: 1254383359}
-  currentPowerUp: 0
-  rocketPrefabs: {fileID: 0}
+  currentPowerUp: 2
+  rocketPrefabs: {fileID: 3474481136719123781, guid: 3f0093aa5e97d9e48af257a8e3c6d1c0, type: 3}
+  hangTime: 0
+  smashSpeed: 0
+  explosionForce: 0
+  exoplosionRadius: 0
 --- !u!1 &2134613194
 GameObject:
   m_ObjectHideFlags: 0
